@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>createStudentsForm</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-
+  ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+</head>
+<body>
+<div class="container text-center" >
+    <h2>학생 등록하기</h2>
+    <form action="/students/new" method="post">
+        <div class="row g-3">
+            <div class="col">
+                <input type="text" id="id" name="id" class="form-control" placeholder="학번을 입력하세요.">
+            </div>
+            <div class="col">
+                <input type="text" id="name" name="name" class="form-control" placeholder="이름을 입력하세요.">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">등록</button>
+        <a href="/" class="btn btn-primary" role="button">취소</a>
+    </form>
+</div>
+</body>
+</html>
